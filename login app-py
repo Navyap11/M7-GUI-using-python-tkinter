@@ -1,0 +1,28 @@
+from tkinter import *
+
+window=Tk()
+window.geometry("400x400")
+
+title_label= Label("Login App", fg="white", bg="blue", height=1, width=100)
+title_label.pack()
+
+frame= Frame(master=window, width= 360, height=200, bg= "#A7DEE6")
+name_label= Label(frame, text="Full Name", fg="white", bg="dark blue")
+email_label= Label(frame,text="Email ID", fg="white", bg="dark blue")
+pswrd_label= Label(frame,text=" Enter Password", fg="white", bg="dark blue")
+
+name_entry= Entry(frame)
+email_entry= Entry(frame)
+pswrd_entry= Entry(frame, show="*")
+
+button= Button(text="Create Account", height=1, bg= "#8D8594", fg="black")
+frame.place(x=20, y=0)
+name_label.place(x=20, y=20)
+name_entry.place(x=150, y=20)
+email_label.place(x=20, y=80)
+email_entry.place(x=150, y=80)
+pswrd_label.place(x=20, y= 140)
+pswrd_entry.place(x=150, y=140)
+button.place(x=130, y=210)
+
+window.mainloop()
