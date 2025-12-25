@@ -3,9 +3,6 @@ from tkinter import *
 window=Tk()
 window.geometry("400x400")
 
-title_label= Label("Login App", fg="white", bg="blue", height=1, width=100)
-title_label.pack()
-
 frame= Frame(master=window, width= 360, height=200, bg= "#A7DEE6")
 name_label= Label(frame, text="Full Name", fg="white", bg="dark blue")
 email_label= Label(frame,text="Email ID", fg="white", bg="dark blue")
