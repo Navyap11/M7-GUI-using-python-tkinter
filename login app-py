@@ -12,7 +12,13 @@ name_entry= Entry(frame)
 email_entry= Entry(frame)
 pswrd_entry= Entry(frame, show="*")
 
-button= Button(text="Create Account", height=1, bg= "#8D8594", fg="black")
+def login():
+    username= name_entry.get()
+    message= "Hi, "+ username +", login sucsessful!"
+    text.insert(END, message)
+
+button= Button(text="Create Account", height=1, bg= "#8D8594", fg="black", command=login )
+text= Text(bg="#7B31BD", fg= "black")
 frame.place(x=20, y=0)
 name_label.place(x=20, y=20)
 name_entry.place(x=150, y=20)
@@ -21,5 +27,6 @@ email_entry.place(x=150, y=80)
 pswrd_label.place(x=20, y= 140)
 pswrd_entry.place(x=150, y=140)
 button.place(x=130, y=210)
+text.place(y=250)
 
 window.mainloop()

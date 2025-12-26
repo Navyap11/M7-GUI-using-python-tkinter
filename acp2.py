@@ -2,7 +2,7 @@ from tkinter import *
 from datetime import date
 
 window = Tk()
-window.geometry("300x400")
+window.geometry("400x400")
 window.title("Age Calculator")
 
 Label(window, text="Day").grid(row=0, column=0)
