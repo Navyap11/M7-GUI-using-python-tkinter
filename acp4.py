@@ -1,0 +1,1 @@
+#p means principal amount, r means rate of interest, t means time, simple interest formula- ptr/100
