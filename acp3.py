@@ -8,7 +8,7 @@ def convert():
     inches = float(entry.get())
     cm = inches * 2.54
     textt= "cm: "+str(cm)
-    label.config(window,textt)
+    label.config(text=textt)
 
 title_label= Label(window, text="Enter length in inches:", bg= "#243B3F", fg= "white", borderwidth= 1)
 title_label.pack()
