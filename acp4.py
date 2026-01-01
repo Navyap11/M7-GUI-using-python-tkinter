@@ -36,6 +36,9 @@ time_entry.pack()
 calc_btn= Button(window, text="Calculate", command=calculate)
 calc_btn.pack(pady=10)
 
+si_label = Label(window, text="") 
+si_label.pack()
+
 ci_label = Label(window, text="")
 ci_label.pack()
 
